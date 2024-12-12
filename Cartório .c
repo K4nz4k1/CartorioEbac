@@ -129,7 +129,8 @@ int main()//função principal Núcleo da Operação
 	printf("Escolha a opção desejada do menu:\n\n");
 	printf("\t1 - Resgistrar Nomes\n");
 	printf("\t2 - Consultar Nomes\n");
-	printf("\t3 - Deletar Nomes\n\n");
+	printf("\t3 - Deletar Nomes\n");
+	printf("\t4 - Sair do sistema\n\n");
 	printf("Opção: ");
 	
     scanf("%d", &opcao);
@@ -152,6 +153,12 @@ int main()//função principal Núcleo da Operação
 			
 		deletar();
 		break;
+	
+		case 4:
+		printf("\tPrograma encerrado\n\n");
+		return 0;
+		break;
+		
 			
 		default:
 		printf("Essa opção não está disponível");
